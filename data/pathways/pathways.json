@@ -1,0 +1,104 @@
+{
+  "pathways": [
+    {
+      "id": "express_entry", "name_fa": "اکسپرس انتری", "outcome": "اقامت دائم",
+      "availability": "open", "destination_countries": ["Canada"],
+      "applicant_types": ["individual", "either"], "direct_pr": true,
+      "criteria": [
+        {"id": "language", "description_fa": "زبان و مدرک آزمون", "profile_fields": ["language_profile"], "weight": 1.3},
+        {"id": "education", "description_fa": "تحصیلات و ارزیابی مدارک", "profile_fields": ["education_resume"], "weight": 1.2},
+        {"id": "skilled_work", "description_fa": "سابقه کاری و شغل", "profile_fields": ["work_experience", "occupation"], "weight": 1.3},
+        {"id": "age", "description_fa": "سن متقاضی", "profile_fields": ["age"], "weight": 1.0},
+        {"id": "partner", "description_fa": "اطلاعات همسر، در صورت وجود", "profile_fields": ["partner_profile"], "weight": 0.7}
+      ]
+    },
+    {
+      "id": "self_employed", "name_fa": "خوداشتغالی", "outcome": "اقامت دائم",
+      "availability": "limited", "destination_countries": ["Canada"],
+      "applicant_types": ["individual", "either"], "direct_pr": true,
+      "criteria": [
+        {"id": "relevant_experience", "description_fa": "سابقه کاری مرتبط", "profile_fields": ["work_experience"], "weight": 1.2},
+        {"id": "achievements", "description_fa": "پژوهش، افتخارات و دستاوردها", "profile_fields": ["research_achievements"], "weight": 1.2},
+        {"id": "financial", "description_fa": "بودجه و توان مالی", "profile_fields": ["budget"], "weight": 1.0},
+        {"id": "destination", "description_fa": "کشور مقصد", "profile_fields": ["destination_country"], "weight": 1.0}
+      ]
+    },
+    {
+      "id": "c11", "name_fa": "C11", "outcome": "ورک پرمیت موقت",
+      "availability": "open", "destination_countries": ["Canada"],
+      "applicant_types": ["business_or_startup", "either"], "direct_pr": false,
+      "criteria": [
+        {"id": "business_experience", "description_fa": "سابقه کسب‌وکار یا مدیریت", "profile_fields": ["business_experience"], "weight": 1.2},
+        {"id": "business_plan", "description_fa": "ایده یا برنامه کسب‌وکار", "profile_fields": ["business_startup_details"], "weight": 1.2},
+        {"id": "budget", "description_fa": "بودجه فعلی و آتی", "profile_fields": ["budget"], "weight": 1.0},
+        {"id": "timeline", "description_fa": "ترجیح زمانی", "profile_fields": ["timeline"], "weight": 0.7}
+      ]
+    },
+    {
+      "id": "ict", "name_fa": "انتقال درون‌شرکتی (ICT)", "outcome": "ورک پرمیت موقت",
+      "availability": "open", "destination_countries": ["Canada"],
+      "applicant_types": ["business_or_startup", "either"], "direct_pr": false,
+      "criteria": [
+        {"id": "business_experience", "description_fa": "سابقه شرکت و مدیریت", "profile_fields": ["business_experience"], "weight": 1.2},
+        {"id": "role", "description_fa": "نقش و شغل متقاضی", "profile_fields": ["occupation"], "weight": 1.0},
+        {"id": "work_history", "description_fa": "سابقه کاری", "profile_fields": ["work_experience"], "weight": 1.2},
+        {"id": "family", "description_fa": "وضعیت همراهان", "profile_fields": ["family_members"], "weight": 0.6}
+      ]
+    },
+    {
+      "id": "pnp", "name_fa": "برنامه‌های استانی (PNP)", "outcome": "اقامت دائم یا مسیر منتهی به آن",
+      "availability": "variable", "destination_countries": ["Canada"],
+      "applicant_types": ["individual", "either"], "direct_pr": true,
+      "criteria": [
+        {"id": "occupation", "description_fa": "شغل و تخصص", "profile_fields": ["occupation"], "weight": 1.2},
+        {"id": "language", "description_fa": "سطح و مدرک زبان", "profile_fields": ["language_profile"], "weight": 1.0},
+        {"id": "work_experience", "description_fa": "سابقه کاری مرتبط", "profile_fields": ["work_experience"], "weight": 1.2},
+        {"id": "education", "description_fa": "تحصیلات", "profile_fields": ["education_resume"], "weight": 0.8},
+        {"id": "relatives", "description_fa": "اقوام در مقصد، در صورت وجود", "profile_fields": ["destination_relatives"], "weight": 0.5}
+      ]
+    },
+    {
+      "id": "provincial_entrepreneur", "name_fa": "کارآفرینی استانی", "outcome": "اقامت مرحله‌ای",
+      "availability": "limited", "destination_countries": ["Canada"],
+      "applicant_types": ["business_or_startup", "either"], "direct_pr": false,
+      "criteria": [
+        {"id": "budget", "description_fa": "بودجه و توان سرمایه‌گذاری", "profile_fields": ["budget"], "weight": 1.2},
+        {"id": "management_experience", "description_fa": "سابقه مدیریت یا کسب‌وکار", "profile_fields": ["business_experience"], "weight": 1.2},
+        {"id": "business_plan", "description_fa": "ایده یا برنامه کسب‌وکار", "profile_fields": ["business_startup_details"], "weight": 1.0},
+        {"id": "family", "description_fa": "اعضای خانواده همراه", "profile_fields": ["family_members"], "weight": 0.5}
+      ]
+    },
+    {
+      "id": "startup_visa", "name_fa": "استارتاپ", "outcome": "هدف برنامه اقامت دائم؛ شرایط باید بررسی شود",
+      "availability": "competitive", "destination_countries": ["Canada"],
+      "applicant_types": ["business_or_startup", "either"], "direct_pr": true,
+      "criteria": [
+        {"id": "innovation", "description_fa": "ایده کسب‌وکار یا استارتاپ", "profile_fields": ["business_startup_details"], "weight": 1.2},
+        {"id": "support", "description_fa": "اطلاعات حمایت یا پذیرش کسب‌وکار", "profile_fields": ["business_startup_details"], "weight": 1.0},
+        {"id": "language", "description_fa": "زبان و مدرک آزمون", "profile_fields": ["language_profile"], "weight": 0.8},
+        {"id": "achievements", "description_fa": "سوابق و دستاوردها", "profile_fields": ["research_achievements"], "weight": 0.6}
+      ]
+    },
+    {
+      "id": "study", "name_fa": "تحصیل", "outcome": "استادی پرمیت؛ اقامت دائم جداگانه بررسی می‌شود",
+      "availability": "open", "destination_countries": ["Canada"],
+      "applicant_types": ["individual", "either"], "direct_pr": false,
+      "criteria": [
+        {"id": "education", "description_fa": "تحصیلات و سابقه آموزشی", "profile_fields": ["education_resume"], "weight": 1.0},
+        {"id": "budget", "description_fa": "بودجه و هزینه‌های قابل‌تحمل", "profile_fields": ["budget", "cost_preferences"], "weight": 1.2},
+        {"id": "language", "description_fa": "زبان و برنامه یادگیری", "profile_fields": ["language_profile"], "weight": 0.8},
+        {"id": "timeline", "description_fa": "ترجیح زمانی", "profile_fields": ["timeline"], "weight": 0.5}
+      ]
+    },
+    {
+      "id": "sponsorship", "name_fa": "اسپانسرشیپ خانوادگی", "outcome": "اقامت دائم در برخی دسته‌ها؛ بررسی رابطه لازم است",
+      "availability": "restricted", "destination_countries": ["Canada"],
+      "applicant_types": ["individual", "either"], "direct_pr": true,
+      "criteria": [
+        {"id": "family_relation", "description_fa": "وضعیت خانوادگی و همراهان", "profile_fields": ["family_members", "marital_status"], "weight": 1.0},
+        {"id": "relatives", "description_fa": "اقوام و اعضای خانواده در مقصد", "profile_fields": ["destination_relatives"], "weight": 1.2},
+        {"id": "past_attempts", "description_fa": "سوابق درخواست یا ویزا", "profile_fields": ["previous_immigration"], "weight": 0.5}
+      ]
+    }
+  ]
+}
